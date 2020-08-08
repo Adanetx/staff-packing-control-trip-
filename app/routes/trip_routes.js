@@ -50,7 +50,7 @@ router.get('/trips/:id', requireToken, (req, res, next) => {
   Trip.findById(req.params.id)
     .then(handle404)
     // if `findById` is succesful, respond with 200 and "example" JSON
-    .then(trip => res.status(200).json({ example: trip.toObject() }))
+    .then(trip => res.status(200).json({ trip: trip.toObject() }))
     // if an error occurs, pass it to the handler
     .catch(next)
 })

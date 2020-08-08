@@ -9,9 +9,11 @@ curl "${API}${URL_PATH}/${ID}" \
 --header "Authorization: Bearer ${TOKEN}" \
 --data '{
     "trips": {
+         "date": "'"${DATE}"'",
+        "driverName": "'"${DRIVERNAME}"'",
         "location": "'"${LOCATION}"'",
-        "distination": "'"${DISTINATION}"'",
-        "driverName": "'"${DRIVERNAME}"'"
+        "destination": "'"${DESTINATION}"'"
+      }
      }'
 
 echo
