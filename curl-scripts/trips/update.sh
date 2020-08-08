@@ -4,16 +4,16 @@ URL_PATH="/trips"
 
 curl "${API}${URL_PATH}/${ID}" \
   --include \
-  --request PATCH \
+  --request POST \
   --header "Content-Type: application/json" \
---header "Authorization: Bearer ${TOKEN}" \
---data '{
+  --header "Authorization: Bearer ${TOKEN}" \
+  --data '{
     "trip": {
-         "date": "'"${DATE}"'",
-        "driverName": "'"${DRIVERNAME}"'",
-        "location": "'"${LOCATION}"'",
-        "destination": "'"${DESTINATION}"'"
-      }
-     }'
+      "date": "'"${DATE}"'",
+      "driverName": "'"${DRIVERNAME}"'",
+      "location": "'"${LOCATION}"'",
+      "destination": "'"${DESTINATION}"'"
+    }
+  }'
 
 echo
