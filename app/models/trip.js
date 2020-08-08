@@ -5,6 +5,7 @@ const tripSchema = new mongoose.Schema(
     location: String,
     date: Date,
     destination: String,
+
     driverName: String,
     // items: [
     //   {
