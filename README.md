@@ -4,6 +4,12 @@
 ## Important Links
 
 ## Planning Story
+creating, Deleting, and updating data using the four usenfull routes
+first I Identify the data that that have relation ship to the user then I apply the methods
+- GET
+- POST
+- PATCH
+- DELET
 
 
 ### User Stories
@@ -23,16 +29,14 @@
 - Javascript
 
 ### Unsolved Problems
-
-- Still need to ....
-- Would like to eventually ....
+more data will be needed for the trip, and Item information 
 
 ## Images
 
 #### Wireframe:
-![wireframe]()
+![wireframe](https://i.imgur.com/4tGAB7P.png)
 
----
+
 
 #### ERD:
-![ERD]()
+![ERD](https://i.imgur.com/d632Nzl.png)
