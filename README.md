@@ -11,8 +11,8 @@ first I Identify the data that that have relation ship to the user then I apply 
 - DELET
 
 ## important link
-[](https://github.com/Adanetx/staff-packing-control-trip1-)
-[](adanetx.github.io/staff-packing-cont)
+[client side development](https://github.com/Adanetx/staff-packing-control-trip1-)
+[deployment](adanetx.github.io/staff-packing-cont)
 
 ### User Stories
 1. as user I need to sign
