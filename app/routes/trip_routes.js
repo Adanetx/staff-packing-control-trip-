@@ -77,7 +77,7 @@ router.post('/trips', requireToken, (req, res, next) => {
 router.patch('/trips/:id', requireToken, removeBlanks, (req, res, next) => {
   // if the client attempts to change the `owner` property by including a new
   // owner, prevent that by deleting that key/value pair
-  delete req.body.Trip.owner
+  delete req.body.trip.owner
 
   Trip.findById(req.params.id)
     .then(handle404)

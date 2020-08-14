@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const tripSchema = new mongoose.Schema(
   {
-    location: String,
     date: Date,
+    driverName: String,
+    location: String,
     destination: String,
 
-    driverName: String,
     // items: [
     //   {
     //     type: mongoose.Schema.Types.ObjectId,

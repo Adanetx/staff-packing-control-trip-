@@ -10,6 +10,7 @@ curl "${API}${URL_PATH}/${ID}" \
   --data '{
     "trip": {
       "date": "'"${DATE}"'",
+      "driverName": "'"${DRIVERNAME}"'",
       "location": "'"${LOCATION}"'",
       "destination": "'"${DESTINATION}"'"
     }
