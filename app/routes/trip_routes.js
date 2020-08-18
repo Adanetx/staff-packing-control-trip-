@@ -30,7 +30,7 @@ const router = express.Router()
 // INDEX
 // GET /examples
 router.get('/trips', requireToken, (req, res, next) => {
-  Trip.find()
+  Trip.find({owner: req.user._id})
     .then(trips => {
       // `examples` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
@@ -102,7 +102,10 @@ router.delete('/trips/:id', requireToken, (req, res, next) => {
     .then(handle404)
     .then(trip => {
       // throw an error if current user doesn't own `example`
+      console.log('req is ', req)
+      console.log('trip is ', trip)
       requireOwnership(req, trip)
+
       // delete the example ONLY IF the above didn't throw
       trip.deleteOne()
     })
