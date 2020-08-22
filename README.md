@@ -52,7 +52,7 @@ first I Identify the data that that have relation ship to the user then I apply 
 
 
 #### Wireframe:
-![wireframe](https://i.imgur.com/4tGAB7P.png)
+![wireframe](https://i.imgur.com/TnCNLqF.png)
 
 
 
